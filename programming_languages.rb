@@ -38,8 +38,8 @@ def reformat_languages(languages)
     progmming_languages += name_type.keys
 
 
-    end
   end
+  
 
   ## need to create new hash with language as key to another hash as value that contains
   #style and type. Eg. {Ruby=>{style=>[], type => ""}}
