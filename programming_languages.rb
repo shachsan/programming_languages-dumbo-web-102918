@@ -32,7 +32,7 @@ languages = {
 
 
 def reformat_languages(languages)
-  language=nil
+  language
   languages.each do |style, name_type|
     language += name_type.keys
   end
