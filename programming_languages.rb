@@ -1,4 +1,4 @@
-languages = {
+languages_hash = {
   :oo => {
     :ruby => {
       :type => "interpreted"
@@ -30,11 +30,11 @@ languages = {
   }
 }
 
-def reformat_languages(languages)
+def reformat_languages(languages_hash)
   progmming_languages=[]
   reformed_hash = {}
   #creating array of progamming languages to use as keys in a new hash
-  languages.each do |style, name_type|
+  languages_hash.each do |style, name_type|
     progmming_languages += name_type.keys
   end
 
@@ -57,15 +57,15 @@ def reformat_languages(languages)
 # end
 
 progmming_languages.uniq.each do |language|
-  reformed_hash[language] = style_type_hash(language)
+  reformed_hash[language] = style_type_hash(languages_hash, language)
 end
 reformed_hash
 end
 
-def style_type_hash(language)
+def style_type_hash(languages_hash,language)
   style_arr = []
   new_hash = {}
-  languages.each do |style, name_type|
+  languages_hash.each do |style, name_type|
     name_type.each do |lang_name, lang_type|
       lang_type.each do |type, value|
         if language == lang_name
@@ -76,4 +76,4 @@ def style_type_hash(language)
   end
   return new_hash
 end
-reformat_languages(languages)
+reformat_languages(languages_hash)
