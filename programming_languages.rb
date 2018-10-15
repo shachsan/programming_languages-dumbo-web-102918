@@ -76,4 +76,4 @@ def style_type_hash(languages_hash,language)
   end
   return new_hash
 end
-reformat_languages(languages_hash)
+p reformat_languages(languages_hash)
