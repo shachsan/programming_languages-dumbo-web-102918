@@ -1,13 +1,3 @@
-def reformat_languages(languages)
-  languages.each do |style, name_type|
-    language = name_type.keys
-  end
-  p language
-end
-
-reformat_languages(languages)
-
-
 languages = {
   :oo => {
     :ruby => {
@@ -39,3 +29,13 @@ languages = {
 
   }
 }
+
+
+def reformat_languages(languages)
+  languages.each do |style, name_type|
+    language = name_type.keys
+  end
+  p language
+end
+
+reformat_languages(languages)
