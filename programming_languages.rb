@@ -1,34 +1,34 @@
-languages = {
-  :oo => {
-    :ruby => {
-      :type => "interpreted"
-    },
-    :javascript => {
-      :type => "interpreted"
-    },
-    :python => {
-      :type => "interpreted"
-    },
-    :java => {
-      :type => "compiled"
-    }
-  },
-  :functional => {
-    :clojure => {
-      :type => "compiled"
-    },
-    :erlang => {
-      :type => "compiled"
-    },
-    :scala => {
-      :type => "compiled"
-    },
-    :javascript => {
-      :type => "interpreted"
-    }
-
-  }
-}
+# languages = {
+#   :oo => {
+#     :ruby => {
+#       :type => "interpreted"
+#     },
+#     :javascript => {
+#       :type => "interpreted"
+#     },
+#     :python => {
+#       :type => "interpreted"
+#     },
+#     :java => {
+#       :type => "compiled"
+#     }
+#   },
+#   :functional => {
+#     :clojure => {
+#       :type => "compiled"
+#     },
+#     :erlang => {
+#       :type => "compiled"
+#     },
+#     :scala => {
+#       :type => "compiled"
+#     },
+#     :javascript => {
+#       :type => "interpreted"
+#     }
+#
+#   }
+# }
 
 
 def reformat_languages(languages)
@@ -60,4 +60,4 @@ def reformat_languages(languages)
   p reformed_hash
 end
 
-reformat_languages(languages)
+# reformat_languages(languages)
