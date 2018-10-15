@@ -47,8 +47,10 @@ def reformat_languages(languages)
     languages.each do |style, name_type|
       style_arr = []
       name_type.each do |lang_name, lang_type|
-        if language == lang_name
-          reformed_hash[language] = {:style => style_arr << style, lang_type}
+        lang_type.each do |type, value|
+          if language == lang_name
+            reformed_hash[language] = {:style => style_arr << style, type=>value}
+          end
         end
       end
     end
