@@ -2,10 +2,10 @@ def reformat_languages(languages)
   languages.each do |style, name_type|
     language = name_type.keys
   end
-  p language 
+  p language
 end
 
-reformat_languages
+reformat_languages(languages)
 
 
 languages = {
