@@ -43,6 +43,4 @@ def style_type_hash(language)
     end
   end
   return new_hash
-end 
-
-
+end
